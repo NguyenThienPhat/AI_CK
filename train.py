@@ -55,7 +55,7 @@ while(True):
     test_image=test_image.astype('float32')
     test_image = np.expand_dims(test_image, axis=0)
     result = (new_model.predict(test_image).argmax())
-    classes = ['Anh Việt', 'Bảo Nha', 'Chí Nhân', 'Đoàn Quang Nhat', 'Giang Hà', 'Hải Hiếu', 'Kim Thoa', 'Lê Quang Nhat', 'Sơn Lâm', 'Tấn Vũ', 'Thảo Hưng', 'Thiên Phát', 'Tuấn Nam']
+    classes = ['hoa_lan','hoa_sen','hoadao','hoahong','hoahuongduong','hoamai','hoasu']
 
     print('Đây là : {}'.format(classes[result]))
     os.remove('C:\\Users\\DELL\\Documents\\AI_Cuoiki\\test' + str(i) + ".jpg")
